@@ -1,0 +1,417 @@
+<!-- 
+  Hi, I'm Raigo. Humble welcome to my coding venture. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title & Keys -->
+  <title>Jiwambe | Easy credit for rides, homes, and beyond</title>
+  <meta name="keywords" content="credit, loan, emobility, e-mobility, fleet, taxi, courier">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://jiwambe.raigo.design/_img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://jiwambe.raigo.design/_img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="https://jiwambe.raigo.design/_img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://jiwambe.raigo.design/_img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Jiwambe" />
+  <link rel="manifest" href="https://jiwambe.raigo.design/_img/favicon/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="_styl/tokens.css">
+  <link rel="stylesheet" href="_styl/reset.css">
+  <link rel="stylesheet" href="_styl/base.css">
+  <link rel="stylesheet" href="_styl/main.css">
+
+  <!-- Hotjar Tracking Code for raigo.design -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:4977038,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-content">
+        <div class="logo-jiwambe">
+        <a href="">
+          <svg fill="none" viewBox="0 0 3293 850"><g clip-path="url(#a)"><path d="M425.75 0c234.721 0 425 190.279 425 425s-190.279 425-425 425S.75 659.721.75 425 191.029 0 425.75 0ZM273.607 538.111v217.978c39.064 17.98 81.853 29.249 126.893 32.333V600h62v187.453c45.307-4.539 88.166-17.378 127.035-36.976V537.611L431.821 379.897 273.607 538.111ZM85.35 555.009c25.685 67.212 70.705 124.867 128.257 166.164V598.111l-.357.358v-85.864L431.605 294.25l.216.216.216-.216 218.377 218.376v3.445h.121v195.612c53.892-42.315 95.553-99.499 118.811-165.371L431.695 208.659 85.35 555.009ZM304.495 81.381C162.917 131.34 61.464 266.323 61.464 425c0 21.366 1.84 42.303 5.37 62.66l321.93-321.932-82.641-82.642-1.628-1.705Zm249.453 5.025-79.321 79.322 311.666 311.668A367.29 367.29 0 0 0 790.035 425c0-155.407-97.313-288.084-234.328-340.42l-1.759 1.826ZM425.75 60.714a367.349 367.349 0 0 0-52.395 3.741l58.34 58.341 56.711-56.712a366.607 366.607 0 0 0-62.656-5.37ZM3150.45 642.88c-30.18 0-56.84-6.664-79.97-19.992-23.13-13.328-41.16-31.752-54.09-55.272-12.55-23.52-18.82-50.568-18.82-81.144 0-30.968 6.27-58.016 18.82-81.144 12.93-23.52 30.96-41.748 54.09-54.684 23.13-12.936 49.59-19.404 79.38-19.404 29.01 0 54.1 6.272 75.27 18.816 21.56 12.152 38.22 29.204 49.98 51.156 11.76 21.952 17.64 48.02 17.64 78.204 0 4.704-.2 9.212-.59 13.524 0 3.92-.39 8.232-1.18 12.936h-252.25v-46.452h207.56l-15.28 17.64c0-31.752-7.26-55.86-21.76-72.324-14.11-16.464-33.91-24.696-59.39-24.696-27.44 0-49.39 9.408-65.85 28.224-16.08 18.816-24.11 44.884-24.11 78.204 0 33.712 8.03 60.172 24.11 79.38 16.46 18.816 39 28.224 67.62 28.224 17.24 0 32.34-3.528 45.27-10.584 12.94-7.056 22.54-17.444 28.81-31.164h58.8c-9.8 28.224-26.46 50.372-49.98 66.444-23.12 16.072-51.15 24.108-84.08 24.108ZM2834.54 642.293c-28.22 0-51.74-6.664-70.56-19.992-18.42-13.72-30.58-32.732-36.46-57.036l5.88-1.176v72.912h-59.38v-424.36h61.74v193.276l-5.88-1.764c6.27-22.736 19.01-40.572 38.22-53.508 19.6-12.936 43.31-19.404 71.14-19.404 26.66 0 49.79 6.468 69.39 19.404 19.99 12.936 35.47 30.968 46.45 54.096 10.98 23.128 16.46 50.176 16.46 81.144 0 31.36-5.68 58.8-17.05 82.32-11.37 23.52-27.24 41.748-47.63 54.684-20.38 12.936-44.49 19.404-72.32 19.404Zm-13.52-51.744c26.65 0 47.62-9.212 62.91-27.636 15.68-18.424 23.52-44.1 23.52-77.028 0-32.144-7.84-57.232-23.52-75.264-15.68-18.424-36.65-27.636-62.91-27.636-26.66 0-47.83 9.212-63.51 27.636s-23.52 44.1-23.52 77.028c0 32.144 7.84 57.428 23.52 75.852 15.68 18.032 36.85 27.048 63.51 27.048ZM2154.49 637V337.12h59.39v70.56h2.35V637h-61.74Zm201.69 0V441.196c0-19.992-4.71-34.692-14.12-44.1-9.4-9.408-22.73-14.112-39.98-14.112-16.07 0-30.58 3.92-43.51 11.76-12.94 7.448-23.33 18.032-31.17 31.752-7.44 13.328-11.17 29.008-11.17 47.04l-7.64-69.972c10.19-22.344 25.09-39.984 44.69-52.92 19.99-12.936 42.33-19.404 67.03-19.404 29.79 0 53.51 8.624 71.15 25.872 18.03 17.248 27.04 39.984 27.04 68.208V637h-62.32Zm202.27 0V441.196c0-19.992-4.71-34.692-14.11-44.1-9.41-9.408-22.94-14.112-40.58-14.112-15.68 0-30.18 3.92-43.51 11.76-12.93 7.448-23.13 18.032-30.57 31.752-7.45 13.328-11.18 29.008-11.18 47.04l-12.34-69.972c10.19-22.344 25.48-39.984 45.86-52.92s43.32-19.404 68.8-19.404c30.18 0 54.29 8.82 72.32 26.46 18.42 17.248 27.64 40.572 27.64 69.972V637h-62.33ZM2047.02 637c-1.96-7.448-3.33-15.68-4.12-24.696-.78-9.016-1.17-20.188-1.17-33.516h-2.94V435.904c0-18.816-4.71-32.732-14.12-41.748-9.4-9.408-24.3-14.112-44.68-14.112-20 0-35.87 3.92-47.63 11.76-11.76 7.448-18.62 18.228-20.58 32.34h-59.39c2.74-28.224 15.48-50.764 38.22-67.62s53.31-25.284 91.73-25.284c39.2 0 68.6 9.212 88.2 27.636 19.99 18.032 29.99 44.884 29.99 80.556v139.356c0 9.016.58 18.424 1.76 28.224 1.18 9.408 2.94 19.404 5.29 29.988h-60.56Zm-104.08 5.88c-30.18 0-54.29-7.448-72.32-22.344-18.03-15.288-27.05-35.868-27.05-61.74 0-26.656 9.41-47.628 28.22-62.916 19.21-15.68 46.65-26.264 82.32-31.752l98.2-15.876v43.512l-88.2 13.524c-19.6 3.136-34.5 8.428-44.69 15.876-9.8 7.448-14.7 18.228-14.7 32.34 0 13.328 4.51 23.52 13.53 30.576 9.4 6.664 22.73 9.996 39.98 9.996 23.13 0 42.34-5.684 57.62-17.052 15.29-11.368 22.94-25.48 22.94-42.336l8.23 43.512c-7.06 20.776-19.6 36.848-37.63 48.216-18.04 10.976-40.18 16.464-66.45 16.464ZM1507.3 637.001l-91.73-299.88h64.68l61.15 239.316h-8.23l74.68-239.316h54.68l75.26 239.316h-8.23l60.57-239.316h62.32l-91.72 299.88h-55.28l-75.26-235.788h8.82l-76.44 235.788h-55.27ZM1326.57 637.001v-299.88h61.74v299.88h-61.74Zm0-354.504v-69.856h61.74v69.856h-61.74ZM1131.48 642.881c-14.89 0-29.2-1.176-42.92-3.528-13.72-1.96-23.72-4.508-29.99-7.644v-53.508c8.62 3.528 19.01 6.468 31.16 8.82 12.16 1.96 24.31 2.94 36.46 2.94 25.87 0 45.28-5.292 58.21-15.876 12.94-10.584 19.41-27.44 19.41-50.568V212.641h63.5v313.228c0 39.2-11.56 68.6-34.69 88.2-23.13 19.208-56.84 28.812-101.14 28.812Z"/></g><defs><clipPath id="a"><path d="M0 0h3293v850H0z"/></clipPath></defs></svg>
+        </a>
+      </div>
+      <div class="action-expanded-menu nav-menu">
+        <ul>
+          <li>
+            <button type="button" id="fleet" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Fleet<svg fill="none" class="svg-icon" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="nav-drop-menu">
+              <ul>
+                <li class="nav-drop-menu-item"><p>Fleet Taxi</p></li>
+                <li class="nav-drop-menu-item"><p>Fleet Courier</p></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" id="products" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Products<svg fill="none" class="svg-icon" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="nav-drop-menu">
+              <ul>
+                <li class="nav-drop-menu-item"><p>E-mobility</p></li>
+                <li class="nav-drop-menu-item"><p>Home improvement</p></li>
+                <li class="nav-drop-menu-item"><p>Agricultural</p></li>
+                <!-- <li class="nav-drop-menu-item"><p>Mobile phones</p></li> -->
+                <!-- <li class="nav-drop-menu-item"><p>Laptops</p></li> -->
+                <li class="nav-drop-divider"></li>
+                <li class="nav-drop-menu-item nav-drop-menu-all-items"><p>All products</p></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" id="partners" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Partners<svg fill="none" class="svg-icon" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="nav-drop-menu">
+              <ul>
+                <li class="nav-drop-menu-item"><p>Debt-collection service</p></li>
+                <li class="nav-drop-menu-item"><p>Supplier sign-up</p></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="" class="btn btn-sm btn-sm-ghost btn-text-sm">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="actions">
+        <div>
+          <!-- collapsed menu -->
+          <a href="" class="action-collapsed-menu btn btn-sm btn-sm-secondary btn-text-sm">Menu<svg class="svg-icon" viewBox="0 0 24 24" fill="none"><path d="M3 12H21M3 6H21M9 18H21"/></svg></a>
+          <!-- expanded menu -->
+          <button class="action-lang btn btn-sm btn-sm-secondary btn-text-sm" type="button" id="language" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Eng<svg class="svg-icon" fill="none" viewBox="0 0 24 24"><path d="M2 12h20M2 12c0 5.523 4.477 10 10 10M2 12C2 6.477 6.477 2 12 2m10 10c0 5.523-4.477 10-10 10m10-10c0-5.523-4.477-10-10-10m0 0a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10m0-20a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"/></svg></button>
+          <div class="nav-drop-menu nav-lang">
+            <ul>
+              <li class="nav-drop-menu-item"><p>Swahili</p></li>
+              <li class="nav-drop-menu-item item-selected"><p>English</p></li>
+              <li class="nav-drop-menu-item"><p>Sheng</p></li>
+            </ul>
+          </div>
+        </div>
+        <!-- main cta -->
+        <a href="" class="action-main-cta btn btn-sm btn-sm-primary btn-text-sm">Apply now</a>
+      </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-msg">
+          <h1 class="title-xl">Get the tools you need to earn more</h1>
+          <p class="body-reg-md">For riders, drivers, and entrepreneurs, finance e-motorbikes and business tools with daily payments that fit your income. Apply in 5 minutes.</p>
+          <a href="" class="btn btn-lg btn-lg-primary btn-text-lg">Apply now</a>
+        </div>
+        <img src="_img/homepage/bg-homepage-hero.webp" alt="Young man smiling on a e-motorbike, parked next to highway, big city centre in the background" loading="lazy">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- top offers -->
+    <section class="s-top-offers">
+      <div class="section-content">
+        <h2 class="top-offer-list-title title-lg">Our top finance offers</h2>
+        <ul class="top-offer-list">
+          <!-- offer - e-mobility -->
+          <li class="top-offer">
+            <div class="top-offer-image">
+              <img src="_img/homepage/offer-e-mobility.webp" alt="Man in his thirties, wearing a blue shirt and riding a red e-motorbike on the highway, big city centre in the background" loading="lazy">
+            </div>
+            <div class="top-offer-content">
+              <h3 class="title-md">E-mobility</h3>
+              <p class="body-reg-md">E-motorbikes for boda-boda, delivery, and personal use. From 500 KES/day.</p>
+              <a href="" class="btn btn-sm btn-sm-primary btn-text-sm">Browse products</a>
+            </div>
+          </li>
+          <!-- offer - fleet -->
+          <li class="top-offer">
+            <div class="top-offer-image">
+              <img src="_img/homepage/offer-fleet-taxi.webp" alt="Two men riding a green e-motorbike on a highway, both looking happy, big city centre in the background" loading="lazy">
+            </div>
+            <div class="top-offer-content">
+              <h3 class="title-md">Fleet programs</h3>
+              <p class="body-reg-md">E-motorbikes and guaranteed rides through our delivery partners. Focus on earning.</p>
+              <a href="" class="btn btn-sm btn-sm-primary btn-text-sm">Join Fleet</a>
+            </div>
+          </li>
+          <!-- offer - home-improvement -->
+          <li class="top-offer">
+            <div class="top-offer-image">
+              <img src="_img/homepage/offer-home-improvement.webp" alt="Young family of three, standing in the front of a family house, in urban setting" loading="lazy">
+            </div>
+            <div class="top-offer-content">
+              <h3 class="title-md">Home improvement</h3>
+              <p class="body-reg-md">Water tanks, solar panels, and home upgrades. From 300 KES/day.</p>
+              <a href="" class="btn btn-sm btn-sm-primary btn-text-sm">Browse products</a>
+            </div>
+          </li>
+        </ul>
+        <p class="top-offer-more body-reg-md">Also financing: <a href="" class="body-link-reg-md" target="_self">mobile phones</a>, <a href="" class="body-link-reg-md" target="_self">laptops</a>, and <a href="" class="body-link-reg-md" target="_self">agricultural equipment</a>—<a href="" class="body-link-reg-md" target="_self">view all products</a>.</p>
+      </div>
+    </section>
+
+    <!-- trust metrics -->
+    <section class="s-trust-metrics">
+      <div class="section-content">
+        <h2 class="title-lg">Trusted by thousands</h2>
+        <ul>
+          <li>
+            <p class="title-xl">500+</p>
+            <p class="body-reg-md">assets financed</p>
+          </li>
+          <li>
+            <p class="title-xl">3.5M+</p>
+            <p class="body-reg-md">KES in financing provided </p>
+          </li>
+          <li>
+            <p class="title-xl">95%</p>
+            <p class="body-reg-md">approval rate</p>
+          </li>
+        </ul>        
+      </div>
+    </section>
+
+    <!-- how it works -->
+    <section class="s-how-it-works">
+      <div class="section-content">
+        <h2 class="title-lg">How it works</h2>
+        <ul>
+          <li>
+            <div class="step-nr">
+              <p class="body-med-md">1</p>
+            </div>
+            <div class="step-msg">
+              <h3 class="title-md">Choose</h3>
+              <p class="body-reg-md">Pick a product or program that fits your needs</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-nr">
+              <p class="body-med-md">2</p>
+            </div>
+            <div class="step-msg">
+              <h3 class="title-md">Apply online</h3>
+              <p class="body-reg-md">Takes just a few minutes</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-nr">
+              <p class="body-med-md">3</p>
+            </div>
+            <div class="step-msg">
+              <h3 class="title-md">Get approved</h3>
+              <p class="body-reg-md">Quick, hassle-free process</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-nr">
+              <p class="body-med-md">4</p>
+            </div>
+            <div class="step-msg">
+              <h3 class="title-md">Start riding or building</h3>
+              <p class="body-reg-md">Get your asset and put it to work</p>
+            </div>
+          </li>
+        </ul>
+        <div class="how-it-works-cta">
+          <a href="" class="btn btn-lg btn-lg-primary btn-text-lg">Apply now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- partners brands -->
+    <section class="s-partners-brands">
+      <div class="section-content">
+        <h2 class="title-lg">Quality e-motorbikes from trusted brands</h2>
+        <p class="body-reg-md">We work with Kenya's top manufacturers to bring you reliable e-motorbikes with warranties and after-sales support.</p>
+        <ul>
+          <li>
+            <img srcset="_img/homepage/logo-ewaka.png 1x, _img/homepage/logo-ewaka@2x.png 2x" alt="Young family of three, standing in the front of a family house, in urban setting" loading="lazy">
+          </li>
+          <li>
+            <img srcset="_img/homepage/logo-enzi.png 1x, _img/homepage/logo-enzi@2x.png 2x" alt="Young family of three, standing in the front of a family house, in urban setting" loading="lazy">
+          </li>
+          <li>
+            <img srcset="_img/homepage/logo-tankvolt.png 1x, _img/homepage/logo-tankvolt@2x.png 2x" alt="Young family of three, standing in the front of a family house, in urban setting" loading="lazy">
+          </li>
+          <li>
+            <img srcset="_img/homepage/logo-fika.png 1x, _img/homepage/logo-fika@2x.png 2x" alt="Young family of three, standing in the front of a family house, in urban setting" loading="lazy">
+          </li>
+          <li>
+            <img srcset="_img/homepage/logo-mazi.png 1x, _img/homepage/logo-mazi@2x.png 2x" alt="Young family of three, standing in the front of a family house, in urban setting" loading="lazy">
+          </li>
+          <li>
+            <img srcset="_img/homepage/logo-spiro.png 1x, _img/homepage/logo-spiro@2x.png 2x" alt="Young family of three, standing in the front of a family house, in urban setting" loading="lazy">
+          </li>
+        </ul>
+      </div>    
+    </section>
+
+    <!-- faq -->
+    <section class="s-faq" aria-label="FAQ">
+      <div class="section-content">
+        <h2 class="title-lg">FAQ</h2>
+        <div class="s-faq-questions">
+          <details class="questions-item" open>
+            <summary class="questions-trigger">
+              <h3 class="title-md">What do I need to qualify?</h3>
+            </summary>
+            <div class="questions-content">
+              <p class="body-reg-md">Valid ID, proof of income, and 2 guarantors. Most applications approved within 3-5 days.</p>
+            </div>
+          </details>
+
+          <details class="questions-item">
+            <summary class="questions-trigger">
+              <h3 class="title-md">Who is eligible for motorbike financing?</h3>
+            </summary>
+            <div class="questions-content">
+              <p class="body-reg-md">………</p>
+            </div>
+          </details>
+
+          <details class="questions-item">
+            <summary class="questions-trigger">
+              <h3 class="title-md">Is insurance included in the financing?</h3>
+            </summary>
+            <div class="questions-content">
+              <p class="body-reg-md">………</p>
+            </div>
+          </details>
+
+          <details class="questions-item">
+            <summary class="questions-trigger">
+              <h3 class="title-md">Can I upgrade or switch to another bike?</h3>
+            </summary>
+            <div class="questions-content">
+              <p class="body-reg-md">………</p>
+            </div>
+          </details>
+
+          <details class="questions-item">
+            <summary class="questions-trigger">
+              <h3 class="title-md">Is there a penalty for missed payments?</h3>
+            </summary>
+            <div class="questions-content">
+              <p class="body-reg-md">………</p>
+            </div>
+          </details>
+        </div>
+        
+        
+      </div>
+    </section>
+
+    <!-- ready get started -->
+    <section class="s-ready-get-started">
+      <div class="section-content">
+        <div class="ready-gt-message">
+          <h2 class="title-lg">Ready to get started?</h2>
+          <p class="body-reg-md">Join 500+ riders earning with Jiwambe.</p>
+          <a href="" class="btn btn-lg btn-lg-primary btn-text-lg">Apply now</a>
+        </div>
+        <div class="ready-gt-image">
+          <img src="_img/ready-get-started.webp" alt="Young man smiling on a e-motorbike, parked next to highway, big city centre in the background" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- insights newsletter -->
+    <section class="s-insights-newsletter">
+      <div class="section-content">
+        <h2 class="title-lg">Get financing tips and new product alerts</h2>
+        <p class="body-reg-md">We'll send updates on new e-motorbikes, financing options, and earning strategies. No spam—opt out anytime.</p>
+        <form action="" method="POST" accept-charset="UTF-8" class="newsletter-form">
+          <fieldset>
+              <div class="">
+                <!-- <label id="" class="" for="email-address">
+                  <span>Email</span>
+                  <span class="form-required">*</span>
+                </label> -->
+                <div class="newsletter-form-input">
+                  <input id="email-address" name="email" required="" placeholder="Your email address" type="email" class="" inputmode="email" autocomplete="email" value="">
+                  <button class="btn btn-sm btn-sm-primary-icon btn-text-sm" for="email-address"><svg class="svg-icon" fill="none" viewBox="0 0 24 24"><path d="M4 12h16m0 0-6-6m6 6-6 6"/></svg></button>
+                </div>
+              </div>
+            </fieldset>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  
+  <!-- scripts / navigation drop down list -->
+  <script>
+      document.querySelectorAll('[data-slot="dropdown-menu-trigger"]').forEach(button => {
+      const dropdown = button.nextElementSibling;
+      
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        
+        // Close other dropdowns
+        document.querySelectorAll('.nav-drop-menu').forEach(menu => {
+          if (menu !== dropdown) {
+            menu.style.opacity = '0';
+            menu.style.visibility = 'hidden';
+            menu.previousElementSibling.setAttribute('data-state', 'closed');
+            menu.previousElementSibling.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Toggle current dropdown
+        const isOpen = button.getAttribute('data-state') === 'open';
+        
+        if (isOpen) {
+          dropdown.style.opacity = '0';
+          dropdown.style.visibility = 'hidden';
+          button.setAttribute('data-state', 'closed');
+          button.setAttribute('aria-expanded', 'false');
+        } else {
+          dropdown.style.opacity = '1';
+          dropdown.style.visibility = 'visible';
+          button.setAttribute('data-state', 'open');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Close on outside click
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.nav-drop-menu').forEach(menu => {
+        menu.style.opacity = '0';
+        menu.style.visibility = 'hidden';
+        menu.previousElementSibling.setAttribute('data-state', 'closed');
+        menu.previousElementSibling.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
+
+<!-- svg clean-up: https://svgomg.net/ -->
+<!-- svg to data64 converter: https://www.svgviewer.dev/svg-to-data-uri -->
+<!-- favicon creator: https://realfavicongenerator.net/ -->
+<!-- png to webp converter: https://webpconverter.com/png-to-webp -->

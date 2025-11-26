@@ -1,0 +1,325 @@
+<!-- 
+  Hi, I'm Raigo. Humble welcome to my coding venture. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title & Keys -->
+  <title>Jiwambe | Fleet Taxi</title>
+  <meta name="keywords" content="credit, loan, emobility, e-mobility, fleet, taxi, courier">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://jiwambe.raigo.design/_img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://jiwambe.raigo.design/_img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="https://jiwambe.raigo.design/_img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://jiwambe.raigo.design/_img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Jiwambe" />
+  <link rel="manifest" href="https://jiwambe.raigo.design/_img/favicon/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="_styl/tokens.css">
+  <link rel="stylesheet" href="_styl/reset.css">
+  <link rel="stylesheet" href="_styl/base.css">
+  <link rel="stylesheet" href="_styl/programs.css">
+
+  <!-- Hotjar Tracking Code for raigo.design -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:4977038,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-content">
+        <div class="logo-jiwambe">
+        <a href="">
+          <svg fill="none" viewBox="0 0 3293 850"><g clip-path="url(#a)"><path d="M425.75 0c234.721 0 425 190.279 425 425s-190.279 425-425 425S.75 659.721.75 425 191.029 0 425.75 0ZM273.607 538.111v217.978c39.064 17.98 81.853 29.249 126.893 32.333V600h62v187.453c45.307-4.539 88.166-17.378 127.035-36.976V537.611L431.821 379.897 273.607 538.111ZM85.35 555.009c25.685 67.212 70.705 124.867 128.257 166.164V598.111l-.357.358v-85.864L431.605 294.25l.216.216.216-.216 218.377 218.376v3.445h.121v195.612c53.892-42.315 95.553-99.499 118.811-165.371L431.695 208.659 85.35 555.009ZM304.495 81.381C162.917 131.34 61.464 266.323 61.464 425c0 21.366 1.84 42.303 5.37 62.66l321.93-321.932-82.641-82.642-1.628-1.705Zm249.453 5.025-79.321 79.322 311.666 311.668A367.29 367.29 0 0 0 790.035 425c0-155.407-97.313-288.084-234.328-340.42l-1.759 1.826ZM425.75 60.714a367.349 367.349 0 0 0-52.395 3.741l58.34 58.341 56.711-56.712a366.607 366.607 0 0 0-62.656-5.37ZM3150.45 642.88c-30.18 0-56.84-6.664-79.97-19.992-23.13-13.328-41.16-31.752-54.09-55.272-12.55-23.52-18.82-50.568-18.82-81.144 0-30.968 6.27-58.016 18.82-81.144 12.93-23.52 30.96-41.748 54.09-54.684 23.13-12.936 49.59-19.404 79.38-19.404 29.01 0 54.1 6.272 75.27 18.816 21.56 12.152 38.22 29.204 49.98 51.156 11.76 21.952 17.64 48.02 17.64 78.204 0 4.704-.2 9.212-.59 13.524 0 3.92-.39 8.232-1.18 12.936h-252.25v-46.452h207.56l-15.28 17.64c0-31.752-7.26-55.86-21.76-72.324-14.11-16.464-33.91-24.696-59.39-24.696-27.44 0-49.39 9.408-65.85 28.224-16.08 18.816-24.11 44.884-24.11 78.204 0 33.712 8.03 60.172 24.11 79.38 16.46 18.816 39 28.224 67.62 28.224 17.24 0 32.34-3.528 45.27-10.584 12.94-7.056 22.54-17.444 28.81-31.164h58.8c-9.8 28.224-26.46 50.372-49.98 66.444-23.12 16.072-51.15 24.108-84.08 24.108ZM2834.54 642.293c-28.22 0-51.74-6.664-70.56-19.992-18.42-13.72-30.58-32.732-36.46-57.036l5.88-1.176v72.912h-59.38v-424.36h61.74v193.276l-5.88-1.764c6.27-22.736 19.01-40.572 38.22-53.508 19.6-12.936 43.31-19.404 71.14-19.404 26.66 0 49.79 6.468 69.39 19.404 19.99 12.936 35.47 30.968 46.45 54.096 10.98 23.128 16.46 50.176 16.46 81.144 0 31.36-5.68 58.8-17.05 82.32-11.37 23.52-27.24 41.748-47.63 54.684-20.38 12.936-44.49 19.404-72.32 19.404Zm-13.52-51.744c26.65 0 47.62-9.212 62.91-27.636 15.68-18.424 23.52-44.1 23.52-77.028 0-32.144-7.84-57.232-23.52-75.264-15.68-18.424-36.65-27.636-62.91-27.636-26.66 0-47.83 9.212-63.51 27.636s-23.52 44.1-23.52 77.028c0 32.144 7.84 57.428 23.52 75.852 15.68 18.032 36.85 27.048 63.51 27.048ZM2154.49 637V337.12h59.39v70.56h2.35V637h-61.74Zm201.69 0V441.196c0-19.992-4.71-34.692-14.12-44.1-9.4-9.408-22.73-14.112-39.98-14.112-16.07 0-30.58 3.92-43.51 11.76-12.94 7.448-23.33 18.032-31.17 31.752-7.44 13.328-11.17 29.008-11.17 47.04l-7.64-69.972c10.19-22.344 25.09-39.984 44.69-52.92 19.99-12.936 42.33-19.404 67.03-19.404 29.79 0 53.51 8.624 71.15 25.872 18.03 17.248 27.04 39.984 27.04 68.208V637h-62.32Zm202.27 0V441.196c0-19.992-4.71-34.692-14.11-44.1-9.41-9.408-22.94-14.112-40.58-14.112-15.68 0-30.18 3.92-43.51 11.76-12.93 7.448-23.13 18.032-30.57 31.752-7.45 13.328-11.18 29.008-11.18 47.04l-12.34-69.972c10.19-22.344 25.48-39.984 45.86-52.92s43.32-19.404 68.8-19.404c30.18 0 54.29 8.82 72.32 26.46 18.42 17.248 27.64 40.572 27.64 69.972V637h-62.33ZM2047.02 637c-1.96-7.448-3.33-15.68-4.12-24.696-.78-9.016-1.17-20.188-1.17-33.516h-2.94V435.904c0-18.816-4.71-32.732-14.12-41.748-9.4-9.408-24.3-14.112-44.68-14.112-20 0-35.87 3.92-47.63 11.76-11.76 7.448-18.62 18.228-20.58 32.34h-59.39c2.74-28.224 15.48-50.764 38.22-67.62s53.31-25.284 91.73-25.284c39.2 0 68.6 9.212 88.2 27.636 19.99 18.032 29.99 44.884 29.99 80.556v139.356c0 9.016.58 18.424 1.76 28.224 1.18 9.408 2.94 19.404 5.29 29.988h-60.56Zm-104.08 5.88c-30.18 0-54.29-7.448-72.32-22.344-18.03-15.288-27.05-35.868-27.05-61.74 0-26.656 9.41-47.628 28.22-62.916 19.21-15.68 46.65-26.264 82.32-31.752l98.2-15.876v43.512l-88.2 13.524c-19.6 3.136-34.5 8.428-44.69 15.876-9.8 7.448-14.7 18.228-14.7 32.34 0 13.328 4.51 23.52 13.53 30.576 9.4 6.664 22.73 9.996 39.98 9.996 23.13 0 42.34-5.684 57.62-17.052 15.29-11.368 22.94-25.48 22.94-42.336l8.23 43.512c-7.06 20.776-19.6 36.848-37.63 48.216-18.04 10.976-40.18 16.464-66.45 16.464ZM1507.3 637.001l-91.73-299.88h64.68l61.15 239.316h-8.23l74.68-239.316h54.68l75.26 239.316h-8.23l60.57-239.316h62.32l-91.72 299.88h-55.28l-75.26-235.788h8.82l-76.44 235.788h-55.27ZM1326.57 637.001v-299.88h61.74v299.88h-61.74Zm0-354.504v-69.856h61.74v69.856h-61.74ZM1131.48 642.881c-14.89 0-29.2-1.176-42.92-3.528-13.72-1.96-23.72-4.508-29.99-7.644v-53.508c8.62 3.528 19.01 6.468 31.16 8.82 12.16 1.96 24.31 2.94 36.46 2.94 25.87 0 45.28-5.292 58.21-15.876 12.94-10.584 19.41-27.44 19.41-50.568V212.641h63.5v313.228c0 39.2-11.56 68.6-34.69 88.2-23.13 19.208-56.84 28.812-101.14 28.812Z"/></g><defs><clipPath id="a"><path d="M0 0h3293v850H0z"/></clipPath></defs></svg>
+        </a>
+      </div>
+      <div class="action-expanded-menu nav-menu">
+        <ul>
+          <li>
+            <button type="button" id="fleet" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Programs<svg fill="none" class="svg-icon" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="nav-drop-menu">
+              <ul>
+                <li class="nav-drop-menu-item"><p>Fleet Taxi</p></li>
+                <li class="nav-drop-menu-item"><p>Fleet Courier</p></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" id="products" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Products<svg fill="none" class="svg-icon" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="nav-drop-menu">
+              <ul>
+                <li class="nav-drop-menu-item"><p>E-mobility</p></li>
+                <li class="nav-drop-menu-item"><p>Home improvement</p></li>
+                <li class="nav-drop-menu-item"><p>Agricultural</p></li>
+                <!-- <li class="nav-drop-menu-item"><p>Mobile phones</p></li> -->
+                <!-- <li class="nav-drop-menu-item"><p>Laptops</p></li> -->
+                <li class="nav-drop-divider"></li>
+                <li class="nav-drop-menu-item nav-drop-menu-all-items"><p>All products</p></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" id="partners" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Partners<svg fill="none" class="svg-icon" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div class="nav-drop-menu">
+              <ul>
+                <li class="nav-drop-menu-item"><p>Debt-collection service</p></li>
+                <li class="nav-drop-menu-item"><p>Supplier sign-up</p></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="" class="btn btn-sm btn-sm-ghost btn-text-sm">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="actions">
+        <div>
+          <!-- collapsed menu -->
+          <a href="" class="action-collapsed-menu btn btn-sm btn-sm-secondary btn-text-sm">Menu<svg class="svg-icon" viewBox="0 0 24 24" fill="none"><path d="M3 12H21M3 6H21M9 18H21"/></svg></a>
+          <!-- expanded menu -->
+          <button class="action-lang btn btn-sm btn-sm-secondary btn-text-sm" type="button" id="language" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="btn btn-sm btn-sm-ghost btn-text-sm" data-slot="dropdown-menu-trigger">Eng<svg class="svg-icon" fill="none" viewBox="0 0 24 24"><path d="M2 12h20M2 12c0 5.523 4.477 10 10 10M2 12C2 6.477 6.477 2 12 2m10 10c0 5.523-4.477 10-10 10m10-10c0-5.523-4.477-10-10-10m0 0a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10m0-20a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"/></svg></button>
+          <div class="nav-drop-menu nav-lang">
+            <ul>
+              <li class="nav-drop-menu-item"><p>Swahili</p></li>
+              <li class="nav-drop-menu-item item-selected"><p>English</p></li>
+              <li class="nav-drop-menu-item"><p>Sheng</p></li>
+            </ul>
+          </div>
+        </div>
+        <!-- main cta -->
+        <a href="" class="action-main-cta btn btn-sm btn-sm-primary btn-text-sm">Apply now</a>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- breadcrumbs -->
+    <section class="s-breadcrumbs">
+      <div class="section-content">
+        <ul>
+          <li><p class="body-reg-sm"><a href="" class="body-link-reg-sm">Home</a></p></li>
+          <li><p class="body-reg-sm"><a href="" class="body-link-reg-sm">Programs</a></p></li>
+          <li><p class="body-reg-sm">Fleet-Taxi</p></li>
+      </ul>
+      </div>
+    </section>
+
+    <!-- intro -->
+    <section class="s-intro">
+      <div class="section-content">
+        <h1 class="title-xl">Fleet Courier</h1>
+        <p class="body-reg-md">Deliver food and packages with e-bicycles—work anytime, no taxi permit needed.</p>
+        <a href="" class="btn btn-lg btn-lg-primary btn-text-lg">Apply now</a>
+      </div>
+    </section>
+
+    <!-- benefits -->
+    <section class="s-benefits">
+      <div class="section-content">
+        <div class="benefits-image">
+          <img src="_img/programs/prog-detail-heading_fleet-courier.webp" alt="Young man smiling and riding an e-motorbike, wearing reflective vest, city evnironment in the background" loading="lazy">
+        </div>
+        <div class="benefits-list">
+          <h2 class="title-lg">Benefits</h2>
+          <ul>
+            <li><p class="body-med-md">Guaranteed rides through Bolt partnership</p></li>
+            <li><p class="body-med-md">Flexible hours—work mornings, afternoons, or evenings</p></li>
+            <li><p class="body-med-md">Pay-as-you-earn—no bulk upfront costs</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- insights newsletter -->
+    <section class="s-insights-newsletter">
+      <div class="section-content">
+        <h2 class="title-lg">Get financing tips and new product alerts</h2>
+        <p class="body-reg-md">We'll send updates on new e-motorbikes, financing options, and earning strategies. No spam—opt out anytime.</p>
+        <form action="" method="POST" accept-charset="UTF-8" class="newsletter-form">
+          <fieldset>
+              <div class="">
+                <!-- <label id="" class="" for="email-address">
+                  <span>Email</span>
+                  <span class="form-required">*</span>
+                </label> -->
+                <div class="newsletter-form-input">
+                  <input id="email-address" name="email" required="" placeholder="Your email address" type="email" class="" inputmode="email" autocomplete="email" value="">
+                  <button class="btn btn-sm btn-sm-primary-icon btn-text-sm" for="email-address"><svg class="svg-icon" fill="none" viewBox="0 0 24 24"><path d="M4 12h16m0 0-6-6m6 6-6 6"/></svg></button>
+                </div>
+              </div>
+            </fieldset>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+
+      <!-- footer / brand -->
+      <div class="footer-brand">
+        <svg class="logo-jiwambe" fill="none" viewBox="0 0 3293 850"><g clip-path="url(#a)"><path d="M425.75 0c234.721 0 425 190.279 425 425s-190.279 425-425 425S.75 659.721.75 425 191.029 0 425.75 0ZM273.607 538.111v217.978c39.064 17.98 81.853 29.249 126.893 32.333V600h62v187.453c45.307-4.539 88.166-17.378 127.035-36.976V537.611L431.821 379.897 273.607 538.111ZM85.35 555.009c25.685 67.212 70.705 124.867 128.257 166.164V598.111l-.357.358v-85.864L431.605 294.25l.216.216.216-.216 218.377 218.376v3.445h.121v195.612c53.892-42.315 95.553-99.499 118.811-165.371L431.695 208.659 85.35 555.009ZM304.495 81.381C162.917 131.34 61.464 266.323 61.464 425c0 21.366 1.84 42.303 5.37 62.66l321.93-321.932-82.641-82.642-1.628-1.705Zm249.453 5.025-79.321 79.322 311.666 311.668A367.29 367.29 0 0 0 790.035 425c0-155.407-97.313-288.084-234.328-340.42l-1.759 1.826ZM425.75 60.714a367.349 367.349 0 0 0-52.395 3.741l58.34 58.341 56.711-56.712a366.607 366.607 0 0 0-62.656-5.37ZM3150.45 642.88c-30.18 0-56.84-6.664-79.97-19.992-23.13-13.328-41.16-31.752-54.09-55.272-12.55-23.52-18.82-50.568-18.82-81.144 0-30.968 6.27-58.016 18.82-81.144 12.93-23.52 30.96-41.748 54.09-54.684 23.13-12.936 49.59-19.404 79.38-19.404 29.01 0 54.1 6.272 75.27 18.816 21.56 12.152 38.22 29.204 49.98 51.156 11.76 21.952 17.64 48.02 17.64 78.204 0 4.704-.2 9.212-.59 13.524 0 3.92-.39 8.232-1.18 12.936h-252.25v-46.452h207.56l-15.28 17.64c0-31.752-7.26-55.86-21.76-72.324-14.11-16.464-33.91-24.696-59.39-24.696-27.44 0-49.39 9.408-65.85 28.224-16.08 18.816-24.11 44.884-24.11 78.204 0 33.712 8.03 60.172 24.11 79.38 16.46 18.816 39 28.224 67.62 28.224 17.24 0 32.34-3.528 45.27-10.584 12.94-7.056 22.54-17.444 28.81-31.164h58.8c-9.8 28.224-26.46 50.372-49.98 66.444-23.12 16.072-51.15 24.108-84.08 24.108ZM2834.54 642.293c-28.22 0-51.74-6.664-70.56-19.992-18.42-13.72-30.58-32.732-36.46-57.036l5.88-1.176v72.912h-59.38v-424.36h61.74v193.276l-5.88-1.764c6.27-22.736 19.01-40.572 38.22-53.508 19.6-12.936 43.31-19.404 71.14-19.404 26.66 0 49.79 6.468 69.39 19.404 19.99 12.936 35.47 30.968 46.45 54.096 10.98 23.128 16.46 50.176 16.46 81.144 0 31.36-5.68 58.8-17.05 82.32-11.37 23.52-27.24 41.748-47.63 54.684-20.38 12.936-44.49 19.404-72.32 19.404Zm-13.52-51.744c26.65 0 47.62-9.212 62.91-27.636 15.68-18.424 23.52-44.1 23.52-77.028 0-32.144-7.84-57.232-23.52-75.264-15.68-18.424-36.65-27.636-62.91-27.636-26.66 0-47.83 9.212-63.51 27.636s-23.52 44.1-23.52 77.028c0 32.144 7.84 57.428 23.52 75.852 15.68 18.032 36.85 27.048 63.51 27.048ZM2154.49 637V337.12h59.39v70.56h2.35V637h-61.74Zm201.69 0V441.196c0-19.992-4.71-34.692-14.12-44.1-9.4-9.408-22.73-14.112-39.98-14.112-16.07 0-30.58 3.92-43.51 11.76-12.94 7.448-23.33 18.032-31.17 31.752-7.44 13.328-11.17 29.008-11.17 47.04l-7.64-69.972c10.19-22.344 25.09-39.984 44.69-52.92 19.99-12.936 42.33-19.404 67.03-19.404 29.79 0 53.51 8.624 71.15 25.872 18.03 17.248 27.04 39.984 27.04 68.208V637h-62.32Zm202.27 0V441.196c0-19.992-4.71-34.692-14.11-44.1-9.41-9.408-22.94-14.112-40.58-14.112-15.68 0-30.18 3.92-43.51 11.76-12.93 7.448-23.13 18.032-30.57 31.752-7.45 13.328-11.18 29.008-11.18 47.04l-12.34-69.972c10.19-22.344 25.48-39.984 45.86-52.92s43.32-19.404 68.8-19.404c30.18 0 54.29 8.82 72.32 26.46 18.42 17.248 27.64 40.572 27.64 69.972V637h-62.33ZM2047.02 637c-1.96-7.448-3.33-15.68-4.12-24.696-.78-9.016-1.17-20.188-1.17-33.516h-2.94V435.904c0-18.816-4.71-32.732-14.12-41.748-9.4-9.408-24.3-14.112-44.68-14.112-20 0-35.87 3.92-47.63 11.76-11.76 7.448-18.62 18.228-20.58 32.34h-59.39c2.74-28.224 15.48-50.764 38.22-67.62s53.31-25.284 91.73-25.284c39.2 0 68.6 9.212 88.2 27.636 19.99 18.032 29.99 44.884 29.99 80.556v139.356c0 9.016.58 18.424 1.76 28.224 1.18 9.408 2.94 19.404 5.29 29.988h-60.56Zm-104.08 5.88c-30.18 0-54.29-7.448-72.32-22.344-18.03-15.288-27.05-35.868-27.05-61.74 0-26.656 9.41-47.628 28.22-62.916 19.21-15.68 46.65-26.264 82.32-31.752l98.2-15.876v43.512l-88.2 13.524c-19.6 3.136-34.5 8.428-44.69 15.876-9.8 7.448-14.7 18.228-14.7 32.34 0 13.328 4.51 23.52 13.53 30.576 9.4 6.664 22.73 9.996 39.98 9.996 23.13 0 42.34-5.684 57.62-17.052 15.29-11.368 22.94-25.48 22.94-42.336l8.23 43.512c-7.06 20.776-19.6 36.848-37.63 48.216-18.04 10.976-40.18 16.464-66.45 16.464ZM1507.3 637.001l-91.73-299.88h64.68l61.15 239.316h-8.23l74.68-239.316h54.68l75.26 239.316h-8.23l60.57-239.316h62.32l-91.72 299.88h-55.28l-75.26-235.788h8.82l-76.44 235.788h-55.27ZM1326.57 637.001v-299.88h61.74v299.88h-61.74Zm0-354.504v-69.856h61.74v69.856h-61.74ZM1131.48 642.881c-14.89 0-29.2-1.176-42.92-3.528-13.72-1.96-23.72-4.508-29.99-7.644v-53.508c8.62 3.528 19.01 6.468 31.16 8.82 12.16 1.96 24.31 2.94 36.46 2.94 25.87 0 45.28-5.292 58.21-15.876 12.94-10.584 19.41-27.44 19.41-50.568V212.641h63.5v313.228c0 39.2-11.56 68.6-34.69 88.2-23.13 19.208-56.84 28.812-101.14 28.812Z"/></g><defs><clipPath id="a"><path d="M0 0h3293v850H0z"/></clipPath></defs></svg>
+        <p class="title-md">Easy credit for rides, homes, and beyond</p>
+      </div>
+
+      <!-- footer / links -->
+      <div class="footer-links">
+        <ul>
+          <li><h3 class="title-sm">Programs</h3></li>
+          <li><a href="" class="body-link-reg-sm">Fleet Taxi</a></li>
+          <li><a href="" class="body-link-reg-sm">Fleet Courier</a></li>
+        </ul>
+        <ul>
+          <li><h3 class="title-sm">Products</h3></li>
+          <li><a href="" class="body-link-reg-sm">E-mobility</a></li>
+          <li><a href="" class="body-link-reg-sm">Home improvement</a></li>
+          <li><a href="" class="body-link-reg-sm">Agricultural</a></li>
+          <li><a href="" class="body-link-reg-sm">Mobile phones</a></li>
+          <li><a href="" class="body-link-reg-sm">Laptops</a></li>
+        </ul>
+        <ul>
+          <li><h3 class="title-sm">Partners</h3></li>
+          <li><a href="" class="body-link-reg-sm">Debt-collection service</a></li>
+          <li><a href="" class="body-link-reg-sm">Supplier sign-up</a></li>
+        </ul>
+        <ul>
+          <li><h3 class="title-sm">Resources</h3></li>
+          <li><a href="" class="body-link-reg-sm">Help & FAQ</a></li>
+          <li><a href="" class="body-link-reg-sm">Insights</a></li>
+          <li><a href="" class="body-link-reg-sm">Resources</a></li>
+          <li><a href="" class="body-link-reg-sm">Client stories</a></li>
+          <li><a href="" class="body-link-reg-sm">Whistleblowing</a></li>
+        </ul>
+        <ul>
+          <li><h3 class="title-sm">Company</h3></li>
+          <li><a href="" class="body-link-reg-sm">About us</a></li>
+          <li><a href="" class="body-link-reg-sm">Investors</a></li>
+          <li><a href="" class="body-link-reg-sm">Careers</a></li>
+          <li><a href="" class="body-link-reg-sm">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- footer / contact -->
+      <div class="footer-contact">
+        <ul>
+          <li>
+            <h3 class="title-sm">Email</h3>
+            <p class="body-reg-sm">info@jiwambe.com</p>
+          </li>
+          <li>
+            <h3 class="title-sm">Visit us</h3>
+            <p class="body-reg-sm">Delta Corner Annex, 51433, Ring Rd Westlands Ln, Nairobi, Kenya</p>
+          </li>
+          <li>
+            <h3 class="title-sm title-socials">Socials</h3>
+            <ul class="footer-contact-socials">
+              <!-- facebook -->
+              <li><a href="https://www.facebook.com/jiwambe" class="btn btn-sm btn-sm-inverse-icon btn-text-sm" target="_blank"><svg fill="none" viewBox="0 0 10 17"><path fill="#131515" d="m8.404 9.374.474-3.014H5.955V4.4c0-.825.408-1.63 1.713-1.63h1.348V.203A16.334 16.334 0 0 0 6.643 0C4.237 0 2.667 1.446 2.667 4.06v2.3H0v3.014h2.667v7.293h3.288V9.374h2.449Z"/></svg></a></li>
+              <!-- instagram -->
+              <li><a href="https://www.instagram.com/jiwambe/" class="btn btn-sm btn-sm-inverse-icon btn-text-sm" target="_blank"><svg fill="none" viewBox="0 0 17 17"><mask id="a" width="17" height="17" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><path fill="#fff" d="M16.397 0H0v16.667h16.397V0Z"/></mask><g mask="url(#a)"><path fill="#131515" d="M8.2 0C5.972 0 5.692.01 4.818.05c-.873.04-1.469.181-1.99.387-.54.213-.997.498-1.453.961A4.098 4.098 0 0 0 .43 2.874C.227 3.404.09 4.01.05 4.897.01 5.786 0 6.07 0 8.333s.01 2.547.05 3.435c.04.888.178 1.493.38 2.023.21.548.49 1.013.946 1.476.455.464.913.75 1.452.962.521.206 1.117.347 1.99.387.874.04 1.154.05 3.38.05 2.227 0 2.505-.01 3.38-.05.873-.04 1.469-.18 1.99-.387a4.005 4.005 0 0 0 1.452-.962c.456-.463.736-.928.946-1.476.202-.53.34-1.136.381-2.022.04-.89.05-1.173.05-3.436s-.01-2.547-.05-3.436c-.04-.887-.18-1.493-.38-2.023a4.097 4.097 0 0 0-.947-1.476 4.001 4.001 0 0 0-1.452-.96C13.046.23 12.45.09 11.577.05 10.702.01 10.424 0 8.197 0h.002Zm-.736 1.502h.735c2.189 0 2.448.008 3.313.047.8.038 1.233.173 1.522.287.383.151.655.332.942.624.287.291.465.57.614.958.112.293.246.734.282 1.547.04.878.048 1.142.048 3.366s-.009 2.488-.048 3.367c-.037.812-.17 1.253-.282 1.546a2.582 2.582 0 0 1-.614.958c-.287.291-.56.472-.942.623-.289.115-.723.25-1.522.287-.864.04-1.124.049-3.313.049-2.19 0-2.449-.009-3.313-.049-.8-.037-1.233-.173-1.522-.287a2.535 2.535 0 0 1-.943-.623 2.588 2.588 0 0 1-.613-.958c-.113-.294-.246-.735-.283-1.547-.039-.878-.047-1.142-.047-3.368 0-2.225.008-2.488.047-3.366.037-.813.17-1.254.283-1.547.148-.39.326-.667.613-.959a2.54 2.54 0 0 1 .943-.623c.289-.115.723-.25 1.522-.288.757-.034 1.05-.045 2.578-.047v.003Zm5.111 1.383a.992.992 0 0 0-.983 1c0 .552.44 1 .983 1a.992.992 0 0 0 .984-1c0-.552-.44-1-.984-1ZM8.2 4.054c-2.325 0-4.21 1.916-4.21 4.28 0 2.363 1.885 4.278 4.21 4.278s4.21-1.915 4.21-4.279c0-2.363-1.885-4.28-4.21-4.28Zm0 1.501c1.51 0 2.733 1.244 2.733 2.778s-1.224 2.778-2.733 2.778c-1.51 0-2.733-1.244-2.733-2.778S6.69 5.555 8.2 5.555Z"/></g></svg></a></li>
+              <!-- tiktok -->
+              <li><a href="" class="btn btn-sm btn-sm-inverse-icon btn-text-sm" target="_blank"><svg fill="none" viewBox="0 0 20 20"><path fill="#131515" d="M16.167 4.563a4.32 4.32 0 0 1-.374-.217 5.257 5.257 0 0 1-.96-.816 4.532 4.532 0 0 1-1.084-2.234h.005C13.67.813 13.705.5 13.71.5h-3.263v12.618c0 .17 0 .337-.007.502l-.003.062c0 .009 0 .018-.002.028v.007a2.77 2.77 0 0 1-1.394 2.2 2.723 2.723 0 0 1-1.35.355 2.761 2.761 0 0 1-2.753-2.77 2.761 2.761 0 0 1 2.753-2.771c.288 0 .574.045.847.134l.004-3.322a6.061 6.061 0 0 0-4.67 1.366 6.404 6.404 0 0 0-1.398 1.723c-.137.238-.657 1.192-.72 2.74-.04.88.224 1.79.35 2.167v.008c.08.221.386.978.886 1.616.403.511.88.96 1.414 1.333v-.008l.007.008C5.991 19.57 7.743 19.5 7.743 19.5c.303-.012 1.319 0 2.472-.547a6.205 6.205 0 0 0 2.008-1.508 6.273 6.273 0 0 0 1.093-1.818 6.809 6.809 0 0 0 .394-2.08V6.852c.04.024.567.373.567.373s.76.487 1.945.804c.85.225 1.995.273 1.995.273v-3.24c-.4.044-1.216-.083-2.05-.499Z"/></svg></a></li>
+              <!-- linkedin -->
+              <li><a href="https://www.linkedin.com/company/jiwambe/" class="btn btn-sm btn-sm-inverse-icon btn-text-sm" target="_blank"><svg fill="none" viewBox="0 0 15 15"><path fill="#131515" d="M3.405 14.35V4.668H.19v9.682h3.215ZM1.798 3.346c1.121 0 1.819-.744 1.819-1.673C3.596.723 2.919 0 1.819 0S0 .723 0 1.673c0 .93.698 1.673 1.777 1.673h.021ZM5.185 14.35H8.4V8.944c0-.29.021-.58.106-.786.232-.578.761-1.177 1.65-1.177 1.163 0 1.629.888 1.629 2.19v5.18H15V8.798c0-2.974-1.586-4.358-3.702-4.358-1.734 0-2.496.97-2.919 1.63H8.4V4.669H5.185c.042.908 0 9.683 0 9.683Z"/></svg></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- footer / legal -->
+      <div class="footer-legal">
+        <ul>
+          <li><p class="body-reg-sm">© 2025 Jiwambe</p></li>
+          <li><a href="" class="body-link-reg-sm">Terms & conditions</a></li>
+          <li><a href="" class="body-link-reg-sm">Privacy policy</a></li>
+          <li><a href="" class="body-link-reg-sm">Cookie policy</a></li>
+          <li><a href="" class="body-link-reg-sm">Cookies settings</a></li>
+          <li><a href="" class="body-link-reg-sm">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <!-- footer / footnote -->
+      <div class="footer-footnote">
+        <p class="body-reg-xs">You are visiting the website of financial service provider. Before entering into a financial service agreement, please read the <a href="" class="body-link-reg-xs">service conditions</a> and do not hesitate to ask for additional information. </p>
+      </div>
+
+
+    </div>
+  </footer>
+  
+  <!-- scripts / navigation drop down list -->
+  <script>
+      document.querySelectorAll('[data-slot="dropdown-menu-trigger"]').forEach(button => {
+      const dropdown = button.nextElementSibling;
+      
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        
+        // Close other dropdowns
+        document.querySelectorAll('.nav-drop-menu').forEach(menu => {
+          if (menu !== dropdown) {
+            menu.style.opacity = '0';
+            menu.style.visibility = 'hidden';
+            menu.previousElementSibling.setAttribute('data-state', 'closed');
+            menu.previousElementSibling.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Toggle current dropdown
+        const isOpen = button.getAttribute('data-state') === 'open';
+        
+        if (isOpen) {
+          dropdown.style.opacity = '0';
+          dropdown.style.visibility = 'hidden';
+          button.setAttribute('data-state', 'closed');
+          button.setAttribute('aria-expanded', 'false');
+        } else {
+          dropdown.style.opacity = '1';
+          dropdown.style.visibility = 'visible';
+          button.setAttribute('data-state', 'open');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Close on outside click
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.nav-drop-menu').forEach(menu => {
+        menu.style.opacity = '0';
+        menu.style.visibility = 'hidden';
+        menu.previousElementSibling.setAttribute('data-state', 'closed');
+        menu.previousElementSibling.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
+
+<!-- svg clean-up: https://svgomg.net/ -->
+<!-- svg to data64 converter: https://www.svgviewer.dev/svg-to-data-uri -->
+<!-- favicon creator: https://realfavicongenerator.net/ -->
+<!-- png to webp converter: https://towebp.io/ -->

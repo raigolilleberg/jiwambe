@@ -1,0 +1,449 @@
+/* 
+  Hi, I'm Raigo. Humble welcome to my coding venture. 
+*/
+
+
+
+/* === === === === === === === === === === === === */
+/*
+
+  - 00. Tokens — check 'tokens.css' file instead
+
+  - 01. Basics
+  – 02. Global
+  – 03. Animation
+  – 04. Forms / Buttons
+
+  — 05. Layout
+
+  - 06. Header & Navigation
+  - 07. Main 
+  - 08. Footer
+
+  – 09. Scaling / Breakpoints
+
+*/
+/* === === === === === === === === === === === === */
+
+
+
+/* 01. Basics */
+/* === === === === === === === === === === === === */
+
+
+
+/* 02. Global */
+/* === === === === === === === === === === === === */
+
+
+
+/* 03. Animation */
+/* === === === === === === === === === === === === */
+
+
+
+/* 04. Forms / Buttons */
+/* === === === === === === === === === === === === */
+
+
+
+/* 05. Layout */
+/* === === === === === === === === === === === === */
+
+
+
+
+
+
+/* 06. Header & Navigation */
+/* === === === === === === === === === === === === */
+
+/* .hero {} */
+  .hero-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    max-width: var(--layout-max-w-content);
+    margin: var(--layout-position);
+    background-color: var(--col-neutral-950);
+  }
+  .hero-content img {
+    position: relative;
+    grid-column: span 12;
+    width: 100%;
+    min-height: 34.25rem;
+    object-fit: cover;
+  }
+    .hero-msg {
+      grid-column: 1 / span 12;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      bottom: var(--spacing-14);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      padding: var(--layout-spacing-sm);
+      z-index: 1;
+    }
+    .hero-msg h1,
+    .hero-msg p {
+      text-align: center;
+      color: var(--col-text-inverse);
+      text-shadow: var(--text-back-drop-sm);
+    }
+    .hero-msg h1 {
+      margin-bottom: var(--spacing-06);
+    }
+    .hero-msg p {
+      margin-bottom: var(--spacing-09);
+    }
+    .hero-msg .btn {
+      width: 12rem;
+    }
+
+
+
+/* 07. Main */
+/* === === === === === === === === === === === === */
+
+/* top offers */
+/* .s-top-offers {} */
+  .top-offer-list-title {
+    grid-column: span 12;
+    grid-row: 1;
+    text-align: center;
+    margin-bottom: var(--spacing-07);
+  }
+  .top-offer-list {
+    grid-column: 1 / -1;
+    max-width: calc((12 / 12) * 100%);
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2;
+    flex-direction: column;
+    gap: var(--spacing-07);
+    margin-bottom: var(--spacing-09);
+  }
+    .top-offer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: var(--spacing-11);
+      background-color: var(--col-neutral-50);
+      border-radius: var(--rad-md);
+      overflow: hidden;
+    }
+      .top-offer-image {
+        /* max-height: 11.25rem; */
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: var(--spacing-08);
+        background-color: var(--col-neutral-950);
+      }
+        .top-offer img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      .top-offer-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-left: var(--spacing-11);
+        padding-right: var(--spacing-11);
+      }
+      .top-offer-content .title-md {
+        margin-bottom: var(--spacing-03);
+      }
+      .top-offer-content .body-reg-md {
+        margin-bottom: var(--spacing-08);
+        /* color: var(--col-text-secondary); */
+      }
+      .top-offer-content .btn {
+        margin-top: auto;
+      }
+
+  .top-offer-more {
+    grid-column: span 12;
+    grid-row: 3;
+    text-align: center;
+  }
+
+/* trust metrics */
+.s-trust-metrics {
+  background-color: var(--col-neutral-50);
+}
+  .s-trust-metrics .title-lg {
+    grid-column: span 12;
+    grid-row: 1;
+    margin-bottom: var(--spacing-09);
+    text-align: center;
+  }
+  .s-trust-metrics ul {
+    grid-column: span 12;
+    grid-row: 2;
+    gap: var(--spacing-09);
+    flex-direction: column;
+  }
+    .s-trust-metrics li {
+      width: 100%;
+      text-align: center;
+    }
+      .s-trust-metrics .title-xl {
+        margin-bottom: var(--spacing-05);
+      }
+      .s-trust-metrics .body-reg-md {
+        color: var(--col-text-secondary);
+      }
+
+/* how it works */
+.s-how-it-works {
+  border-bottom: var(--border-sm) solid var(--col-border-secondary);
+}
+  .s-how-it-works .title-lg {
+    grid-column: span 12;
+    grid-row: 1;
+    margin-bottom: var(--spacing-07);
+  }
+  .s-how-it-works ul {
+    grid-column: span 12;
+    grid-row: 2;
+    flex-direction: column;
+    gap: var(--spacing-05);
+    margin-bottom: var(--spacing-09);
+  }
+
+  .s-how-it-works li {
+    display: flex;
+    gap: var(--spacing-07);
+    padding: var(--spacing-07);
+    background-color: var(--col-neutral-50);
+    border-radius: var(--rad-md);
+  }
+    .s-how-it-works .step-nr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--col-secondary-container);
+      border-radius: var(--rad-rounded);
+    } 
+      .step-nr p {
+        color: var(--col-text-inverse);
+      }
+      .step-msg {
+        flex: 1;
+      }
+        .step-msg .title-md {
+          margin-bottom: var(--spacing-03);
+        }
+        .step-msg .body-reg-md {
+          color: var(--col-text-secondary);
+        }
+
+  .how-it-works-cta {
+    grid-column: span 12;
+    grid-row: 3;
+  }
+    .s-how-it-works .btn {
+      width: 100%;
+    }
+
+  .s-how-it-works .title-lg,
+  .s-how-it-works ul,
+  .how-it-works-cta {
+    width: 100%;
+    max-width: 41.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* partners brands */
+/* .s-partners-brands {
+  
+} */
+  .s-partners-brands .title-lg {
+    grid-column: span 12;
+    grid-row: 1;
+    margin-bottom: var(--spacing-05);
+  }
+  .s-partners-brands .body-reg-md {
+    grid-column: span 12;
+    grid-row: 2;
+    margin-bottom: var(--spacing-07);
+    color: var(--col-text-secondary);
+  }
+  .s-partners-brands ul {
+    grid-column: span 12;
+    grid-row: 3;
+    column-gap: var(--spacing-15);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    .s-partners-brands li {
+      aspect-ratio: 1 / 1;
+      display: flex;
+      width: 7.5rem;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+      .s-partners-brands li img {
+        display: block;
+        object-fit: contain;
+        width: 100%;
+      }
+  .s-partners-brands .title-lg,
+  .s-partners-brands .body-reg-md {
+    width: 100%;
+    max-width: 41.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+
+/* section - ready get started */
+.s-ready-get-started {
+  padding-bottom: 0;
+}
+  .ready-gt-message {
+    grid-column: span 12;
+    grid-row: 1;
+  }
+  .ready-gt-image {
+    grid-column: span 12;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .ready-gt-image img {
+    max-width: 35.75rem;
+  }
+  .s-ready-get-started .title-lg {
+    margin-bottom: var(--spacing-05);
+  }
+  .s-ready-get-started .body-reg-md {
+    margin-bottom: var(--spacing-08);
+  }
+  /* .s-ready-get-started .btn {} */
+
+
+
+/* 08. Footer */
+/* === === === === === === === === === === === === */
+
+
+/* 09. Scaling / Breakpoints */
+/* === === === === === === === === === === === === */
+/* media queires in "em" units for safari bug. all good, as "em" in this case looks browser set default font-size (e.g. in case user set different size) – the same way it would with "rem" unit. */
+
+/* sm+ / 600px */
+@media (min-width: 37.5rem) {
+
+  .top-offer-list {
+    max-width: calc((8 / 12) * 100%);
+  }
+  .top-offer-more {
+    grid-column: 3 / span 8;
+  }
+
+  .s-trust-metrics ul {
+    gap: var(--spacing-07);
+    flex-direction: row;
+  }
+
+}
+
+/* md+ / 800px */
+@media (min-width: 50rem) {
+  
+  .hero-msg {
+    grid-column: 3 / span 8;
+    padding: 0;
+  }
+  .s-how-it-works .btn {
+    width: fit-content;
+  }
+
+  /* section - ready get started */
+  .ready-gt-message {
+    grid-column: span 6;
+    grid-row: 1;
+  }
+  .ready-gt-image {
+    grid-column: span 6;
+    grid-row: 1;
+    margin-top: -1.75rem;
+  }
+  .ready-gt-image img {
+    min-width: inherit;
+  }
+
+}
+
+/* lg+ / 940px */
+@media (min-width: 58.75rem) {
+
+  .hero-msg {
+    grid-column: 4 / span 6;
+    bottom: var(--spacing-16);
+  }
+
+  .top-offer-list-title {
+    margin-bottom: var(--spacing-08);
+  }
+  .top-offer-list {
+    flex-direction: inherit;
+    max-width: calc((10 / 12) * 100%);
+    margin-bottom: var(--spacing-11);
+  }
+
+  .s-trust-metrics .title-lg {
+    margin-bottom: var(--spacing-11);
+  }
+  .s-trust-metrics ul {
+    grid-column: 2 / span 10;
+  }
+
+  .s-how-it-works .title-lg {
+    margin-bottom: var(--spacing-08);
+  }
+  .s-how-it-works ul {
+    margin-bottom: var(--spacing-11);
+  }
+  .s-how-it-works li {
+    padding: var(--spacing-11);
+  }
+
+  .s-ready-get-started .body-reg-md {
+    margin-bottom: var(--spacing-09);
+  }
+
+  /* section - ready get started */
+  .ready-gt-image {
+    margin-top: -2.5rem;
+  }
+
+}
+
+/* xl+ / 1392px */
+@media (min-width: 87rem) {
+
+  .hero-content {
+    margin-top: var(--spacing-11);
+    border-radius: var(--rad-md);
+    overflow: hidden;
+  }
+  .hero-content > * {
+    margin: var(--layout-position);
+  }
+
+}

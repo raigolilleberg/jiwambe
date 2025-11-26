@@ -1,0 +1,228 @@
+/* 
+  Hi, I'm Raigo. Humble welcome to my coding venture. 
+*/
+
+
+
+/* === === === === === === === === === === === === */
+
+  :root {
+
+
+
+    /*** COLOURS ***/
+
+    /* primitives */
+    --col-neutral-0: #FFF;
+    --col-neutral-0-t0: oklch(1 0 0 / 0);
+    --col-neutral-0-t50: oklch(1 0 0 / 0.5);
+    --col-neutral-0-t75: oklch(1 0 0 / 0.75);
+    --col-neutral-0-t90: oklch(1 0 0 / 0.9);
+    --col-neutral-50: #F3F3F3;
+    --col-neutral-100: #E7E8E8;
+    --col-neutral-200: #C4C4C4;
+    --col-neutral-300: #B8B9B9;
+    --col-neutral-400: #A1A1A1;
+    --col-neutral-500: #898A8A;
+    --col-neutral-600: #717373;
+    --col-neutral-700: #5A5B5B;
+    --col-neutral-800: #424444;
+    --col-neutral-900: #2B2C2C;
+    --col-neutral-950: #131515;
+    --col-neutral-950-t25: hsla(180,5,8,25%);
+    --col-neutral-950-t90: hsla(180,5,8,90%);
+
+    --col-green-50: #E5EEED;
+    --col-green-100: #CCDDDA;
+    --col-green-200: #B2CDC8;
+    --col-green-300: #99BCB6;
+    --col-green-400: #80ABA3;
+    --col-green-500: #669A91;
+    --col-green-600: #33796D;
+    --col-green-700: #1A685A;
+    --col-green-800: #0D5F51;
+    --col-green-900: #005748;
+    --col-green-950: #004237;
+
+    --col-red-50: #FEF3F2;
+    --col-red-100: #FFE4E1;
+    --col-red-200: #FFCDC8;
+    --col-red-300: #FFAAA2;
+    --col-red-400: #FD796C;
+    --col-red-500: #F43C2A;
+    --col-red-600: #E23120;
+    --col-red-700: #BF2516;
+    --col-red-800: #9D2317;
+    --col-red-900: #82231A;
+    --col-red-950: #470E08;
+
+    /* global */
+    --col-dimmer: var(--col-neutral-950-t90);
+
+    /* text */
+    --col-text-primary: var(--col-neutral-950);
+    --col-text-secondary: var(--col-neutral-700);
+    --col-text-disabled: var(--col-neutral-400);
+    --col-text-inverse: var(--col-neutral-0);
+
+    /* link */
+    --col-link: var(--col-green-900);
+    --col-link-hover: var(--col-green-950);
+    --col-link-inverse: var(--col-neutral-0);
+    --col-link-inverse-hover: var(--col-neutral-t90);
+
+    /* surface */
+    --col-surface-page: var(--col-neutral-0);
+    --col-primary-container: var(--col-neutral-0);
+    --col-secondary-container: var(--col-green-900);
+    --col-on-secondary-container: var(--col-green-800);
+
+    /* action - primary */
+    --col-action-primary: var(--col-green-900);
+    --col-action-primary-hover: var(--col-green-950);
+    --col-action-primary-active: var(--col-green-950);
+    --col-action-primary-focus: var(--col-green-900);
+    --col-action-primary-selected: var(--col-green-900);
+    --col-action-primary-disabled: var(--col-green-900);
+
+    /* action - secondary  */
+    --col-action-secondary: var(--col-neutral-50);
+    --col-action-secondary-hover: var(--col-neutral-100);
+    --col-action-secondary-active: var(--col-neutral-100);
+    --col-action-secondary-focus: var(--col-neutral-50);
+    --col-action-secondary-selected: var(--col-neutral-50);
+    --col-action-secondary-disabled: var(--col-neutral-50);
+
+    /* action - inverse  */
+    --col-action-inverse: var(--col-neutral-0);
+    --col-action-inverse-hover: var(--col-neutral-0-t50);
+    --col-action-inverse-active: var(--col-neutral-0-t50);
+    --col-action-inverse-focus: var(--col-neutral-0);
+    --col-action-inverse-selected: var(--col-neutral-0-790);
+    --col-action-inverse-disabled: var(--col-neutral-0);
+
+    /* action - ghost  */
+    --col-action-ghost: var(--col-neutral-0-t0);
+    --col-action-ghost-hover: var(--col-neutral-100);
+    --col-action-ghost-active: var(--col-neutral-100);
+    --col-action-ghost-focus: var(--col-neutral-0-t0);
+    --col-action-ghost-selected: var(--col-neutral-0-t0);
+    --col-action-ghost-disabled: var(--col-neutral-0-t0);
+
+    /* action - tertiary  */
+
+    /* icons */
+    --col-ico-default: var(--col-neutral-900);
+    --col-ico-disabled: var(--col-neutral-400);
+    --col-ico-inverse: var(--col-neutral-0);
+    --col-ico-inverse-disabled: var(--col-neutral-0-t50);
+    
+    /* border */
+    --col-border-primary: var(--col-neutral-200);
+    --col-border-secondary: var(--col-neutral-100);
+    --col-border-action: var(--col-neutral-200);
+    --col-border-action-hover: var(--col-neutral-950);
+    --col-border-action-active: var(--col-neutral-950);
+    --col-border-action-focus: var(--col-green-900);
+    --col-border-action-selected: var(--col-neutral-200);
+    --col-border-action-error: var(--col-red-800);
+    --col-border-action-disabled: var(--col-neutral-200);
+
+    /* divider */
+    --col-divider-light: var(--col-neutral-100);
+    --col-divider-strong: var(--col-neutral-200);
+    --col-divider-inverse: var(--col-neutral-0-t50);
+
+
+    /*** SPACING ***/
+
+    --spacing-01: 0; /* 0px */
+    --spacing-02: .125rem; /* 2px */
+    --spacing-03: .25rem; /* 4px */
+    --spacing-04: .375rem; /* 6px */
+    --spacing-05: .5rem; /* 8px */
+    --spacing-06: .75rem; /* 12px */
+    --spacing-07: 1rem; /* 16px */
+    --spacing-08: 1.25rem; /* 20px */
+    --spacing-09: 1.5rem; /* 24px */
+    --spacing-10: 1.75rem; /* 28px */
+    --spacing-11: 2rem; /* 32px */
+    --spacing-12: 2.5rem; /* 40px */
+    --spacing-13: 3rem; /* 48px */
+    --spacing-14: 3.75rem; /* 60px */
+    --spacing-15: 4rem; /* 64px */
+    --spacing-16: 4.5rem; /* 72px */
+    --spacing-17: 5rem; /* 80px */
+    --spacing-18: 6rem; /* 96px */
+    --spacing-19: 8rem; /* 128px */
+
+
+
+    /*** BORDER ***/
+
+    --border-none: 0;
+    --border-sm: 1px;
+    /* --border-md: .15rem; */
+    --border-md: .125rem; /* 1.5px */
+
+
+
+    /*** RADIUS ***/
+
+    --rad-none: 0;
+    --rad-xs: .375rem; /* 6px */
+    --rad-sm: .75rem; /* 12px */
+    --rad-md: 1rem; /* 16px */
+    --rad-lg: 1,25rem; /* 20px */
+    --rad-xl: 1.5rem; /* 24px */
+    --rad-rounded: 100rem; /* 1000px */
+
+
+    
+    /*** TYPOGRAPHY ***/
+
+    /* font-family */
+    --text-a: 'Instrument Sans', system-ui, sans-serif;
+    --text-b: 'Inter', system-ui, sans-serif;
+
+    /* font-weight */
+    --text-weight-xs: 400;
+    --text-weight-sm: 500;
+    --text-weight-md: 600;
+    --text-weight-lg: 680;
+
+    /* line-height */
+    --text-line-xs: 1;
+    --text-line-sm: 1.25;
+    --text-line-md: 1.333;
+    --text-line-lg: 1.5;
+
+    /* letter-spacing */
+    --text-ltr-narrow: -0.005em; /* -0.08px */
+    --text-ltr-nudge: 0.005em; /* 0.08px */
+    --text-ltr-breathe: 0.01em; /* 0.16px */
+
+    /* font-size */
+    --text-a-fluid-md: clamp(1.75rem, 1.6119rem + 0.431vw, 2rem);
+    --text-a-fluid-lg: clamp(3rem, 2.5238rem + 1.4851vw, 3.75rem);
+    
+    /* styles */
+    /* style: weight size/height family  */
+
+    /* text back-drop */
+    --text-back-drop-sm: 0 0.125rem 0.5rem var(--col-neutral-950-t25);
+    --text-back-drop-lg: ;
+
+
+    /*** LAYOUT ***/
+    --layout-max-w-wrap: 87rem; /* 1328px + 32px + 32px */
+    --layout-max-w-content: 83rem; /* 1328px */
+    --layout-position: 0 auto;
+    --layout-spacing-sm: 0 var(--spacing-07); /* 16px */
+    --layout-spacing-lg: 0 var(--spacing-11); /* 32px */
+
+
+
+    /*** ANIMATIONS ***/
+
+}

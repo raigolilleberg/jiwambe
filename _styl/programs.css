@@ -1,0 +1,234 @@
+/* 
+  Hi, I'm Raigo. Humble welcome to my coding venture. 
+*/
+
+
+
+/* === === === === === === === === === === === === */
+/*
+
+  - 00. Tokens — check 'tokens.css' file instead
+
+  - 01. Basics
+  – 02. Global
+  – 03. Animation
+  – 04. Forms / Buttons
+
+  — 05. Layout
+
+  - 06. Header & Navigation
+  - 07. Main 
+  - 08. Footer
+
+  – 09. Scaling / Breakpoints
+
+*/
+/* === === === === === === === === === === === === */
+
+
+
+/* 01. Basics */
+/* === === === === === === === === === === === === */
+
+
+
+/* 02. Global */
+/* === === === === === === === === === === === === */
+
+
+
+/* 03. Animation */
+/* === === === === === === === === === === === === */
+
+
+
+/* 04. Forms / Buttons */
+/* === === === === === === === === === === === === */
+
+
+
+/* 05. Layout */
+/* === === === === === === === === === === === === */
+
+
+
+/* 06. Header & Navigation */
+/* === === === === === === === === === === === === */
+
+
+
+/* 07. Main */
+/* === === === === === === === === === === === === */
+
+.s-intro {
+  padding-top: var(--spacing-14); 
+}
+  .s-intro .title-xl {
+    grid-column: span 12;
+    grid-row: 1;
+    margin-bottom: var(--spacing-06);
+  }
+  .s-intro .body-reg-md {
+    grid-column: span 12;
+    grid-row: 2;
+    margin-bottom: var(--spacing-09);
+  }
+  .s-intro .btn {
+    grid-column: span 12;
+    grid-row: 3;
+  }
+
+.s-benefits {
+  padding-top: var(--spacing-0); 
+  padding-bottom: var(--spacing-0); 
+  margin-bottom: 9rem;
+  /* flex-direction: column; */
+  background-color: var(--col-secondary-container);
+}
+  .s-benefits .benefits-image {
+    grid-column: span 12;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+  }
+  .benefits-image img {
+    /* max-width: 35.75rem; */
+  }
+
+  .s-benefits .benefits-list {
+    grid-column: span 12;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--spacing-13); 
+    padding-bottom: var(--spacing-14); 
+    background-color: var(--col-secondary-container);
+  }
+    .s-benefits .benefits-list ul {
+      flex-direction: column;    
+      width: 100%;
+    }
+    .s-benefits .benefits-list li {
+      margin-bottom: var(--spacing-07);
+    }
+      .s-benefits .benefits-list li:last-child {
+        margin-bottom: var(--spacing-0);
+      }
+    .s-benefits .benefits-list .title-lg,
+    .s-benefits .benefits-list li .body-med-md {
+      color: var(--col-text-inverse);
+    }
+    .s-benefits .benefits-list .title-lg {
+      margin-bottom: var(--spacing-08);
+    }
+    .s-benefits .benefits-list li .body-med-md {
+      display: flex;
+    }
+     .s-benefits .benefits-list li .body-med-md::before {
+        content: '';
+        margin-top: 2px;
+        margin-right: var(--spacing-07);
+        width: 1.25rem;
+        height: 1.25rem;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+        background-size: contain;
+        transition: transform 0.15s cubic-bezier(.4,0,.2,1);
+        flex-shrink: 0;
+      }
+
+
+
+
+
+/* 08. Footer */
+/* === === === === === === === === === === === === */
+
+
+
+/* 09. Scaling / Breakpoints */
+/* === === === === === === === === === === === === */
+/* media queires in "em" units for safari bug. all good, as "em" in this case looks browser set default font-size (e.g. in case user set different size) – the same way it would with "rem" unit. */
+
+/* sm+ / 600px */
+@media (min-width: 37.5rem) {
+
+  
+
+}
+
+/* md+ / 800px */
+@media (min-width: 50rem) {
+
+  .s-intro .title-xl {
+    grid-column: span 8;
+  }
+  .s-intro .body-med-md {
+    grid-column: span 8;
+  }
+  .s-intro .btn {
+    grid-column: span 8;
+  }
+
+}
+
+/* lg+ / 940px */
+@media (min-width: 58.75rem) {
+
+  .s-intro {
+    padding-top: var(--spacing-16);
+  }
+    .s-intro .title-xl {
+      grid-column: span 6;
+    }
+    .s-intro .body-med-md {
+      grid-column: span 6;
+      margin-bottom: var(--spacing-11);
+    }
+    .s-intro .btn {
+      grid-column: span 6;
+    }
+
+  .s-benefits {
+    margin-bottom: 18rem;
+  }
+
+  .s-benefits .benefits-list {
+    padding-top: var(--spacing-14); 
+    padding-bottom: var(--spacing-16); 
+  }
+
+  .s-benefits .benefits-list .title-lg {
+    margin-bottom: var(--spacing-09);
+  }
+
+}
+
+/* xl+ / 1392px */
+@media (min-width: 87rem) {
+  
+  .s-benefits {
+    background-color: unset;
+  }
+
+  .s-benefits .benefits-list {
+    grid-column: 2 / 12;
+    margin-top: -4.5rem;
+    padding-left: var(--spacing-11);
+    padding-right: var(--spacing-11);
+    flex-direction: row;
+    border-radius: var(--rad-md);
+  }
+
+  .s-benefits .benefits-image img {
+    border-radius: var(--rad-md);
+    overflow: hidden;
+  }
+  .s-benefits .benefits-list ul {
+    max-width: 41.5rem;
+  }
+  .s-benefits .benefits-list .title-lg {
+    width: 12.0625rem;
+  }
+
+}

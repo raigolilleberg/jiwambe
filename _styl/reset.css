@@ -1,0 +1,324 @@
+/* 
+  Hi, I'm Raigo. Humble welcome to my coding venture. 
+*/
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, input, optgroup, select, textarea {
+  display: block;
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  -webkit-border-radius: 0; 
+  -moz-border-radius:0; 
+  border-radius: 0;
+  border-style: none;
+}
+em {
+  display: contents;
+}
+html {
+  /* font-size: 10px; reset to 10px helps with value calcuations from design software (figma) */
+  /* font-size: 62.5%;  */
+  /* 62.5% is equal to standard 16px base font-size divided 6px, to achieve 10px root font-size */
+  /* now 1rem = 10px, e.g. 20px width = 2rem width ... easier-quicker-efficient way to calculate */
+  line-height: 1;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-optical-sizing: auto;
+}
+html,
+body {
+  width: 100%; 
+  height: auto; 
+  min-height: 100%;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  display: inline-block;
+  /* overflow: hidden; */
+}
+*,
+:after,
+:before,
+::after,
+::before {
+  -webkit-box-sizing: inherit; 
+  -moz-box-sizing: inherit; 
+  box-sizing: inherit; 
+  border-style: solid;
+  border-width: 0;
+  text-decoration: inherit; 
+  vertical-align: inherit;
+}
+* {
+  -moz-box-sizing:border-box; 
+  -webkit-box-sizing:border-box; 
+  box-sizing:border-box; 
+  margin: 0;
+  padding: 0;
+  /* -webkit-transition: all 60ms ease; 
+  -moz-s: all 60ms ease; 
+  -ms-transition: all 60ms ease; 
+  -o-transition:all 60ms ease; 
+  transition: all 60ms ease; */
+}
+:root {
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+  overflow: hidden scroll; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+  text-size-adjust: 100%; 
+  box-sizing: border-box; 
+  cursor: default; 
+  text-rendering: optimizeLegibility;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset {
+  border: 0;
+}
+  legend {
+    box-sizing: border-box; 
+    color: inherit; 
+    display: table; 
+    max-width: 100%; 
+    padding: 0; 
+    white-space: normal; 
+  }
+img,
+div {
+  display: block;
+  border: 0; 
+  border-style: none;
+}
+[hidden],
+audio:not([controls]),
+template {
+  display: none
+}
+details,
+main {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+button, 
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+button,
+select,
+option {
+  cursor: pointer;
+}
+button, 
+input {
+  overflow: visible;
+  text-transform: none;
+}
+input[type=number] {
+  width: auto;
+}
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+button,
+html [type="button"], 
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; 
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted inherit;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; 
+  padding: 0; 
+}
+[type="checkbox"] + label,
+[type="radio"] +label {
+  cursor: pointer;      
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield; 
+  outline-offset: -2px; 
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button; 
+  font: inherit; 
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+pre,
+textarea {
+  overflow: auto;
+}
+/*textarea {
+  resize: vertical;
+}*/
+code, 
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+dfn {
+  font-style: italic;
+}
+/* mark {} */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+small {
+  font-size: 75%;
+}
+[unselectable] {
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+abbr[title] {
+  border-bottom: none; 
+  text-decoration: underline;
+  text-decoration: underline dotted; 
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+  height: 100%;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+canvas {
+  display: inline-block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0; 
+  overflow: visible;
+}
+
+ol,
+ul {
+  display: flex;
+  list-style: none;
+}
+
+select {
+  -moz-appearance: none; 
+  -webkit-appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+/* select::-ms-value {} */
+  
+@media screen{[hidden~=screen] {
+  display: inherit;
+}}
+
+[hidden~=screen]:not(:active):not(:focus):not(:target) {
+  clip:rect(0 0 0 0)!important;
+  position:absolute!important;
+}
+template,
+[hidden] {
+  display: none;
+}
+
+
+
+
+
+/* 
+  check also: 
+  https://piccalil.li/blog/a-more-modern-css-reset/
+  
+*/
